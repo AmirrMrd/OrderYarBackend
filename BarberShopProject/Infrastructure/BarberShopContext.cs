@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using BarberShopProject.Infrastructure.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace BarberShopProject.Infrastructure
 {
@@ -8,21 +9,17 @@ namespace BarberShopProject.Infrastructure
         : base(options)
         {
         }
-        public DbSet<Blog> Blogs { get; set; }
+        public DbSet<User> Users { get; set; }
 
-        #region Required
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Blog>()
-                .Property(b => b.Url)
-                .IsRequired();
-        }
-        #endregion
+        //#region Required
+        //protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //{
+        //    modelBuilder.Entity<Blog>()
+        //        .Property(b => b.Url)
+        //        .IsRequired();
+        //}
+        //#endregion
     }
 
-    public class Blog
-    {
-        public int BlogId { get; set; }
-        public string? Url { get; set; }
-    }
+    
 }
