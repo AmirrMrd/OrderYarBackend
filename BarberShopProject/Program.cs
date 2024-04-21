@@ -1,4 +1,6 @@
 using BarberShopProject.Infrastructure;
+using BarberShopProject.Infrastructure.Repositories;
+using BarberShopProject.Services.Authorization;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,6 +10,8 @@ builder.Services.AddDbContextPool<BarberShopContext>(
     o => o.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddControllers();
+builder.Services.AddScoped<IAuthorizationService,AuthorizationService>();
+builder.Services.AddScoped<IUsersRepository, UsersRepository>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
