@@ -1,0 +1,15 @@
+D:\BarberShopProject\BarberShopBackendProject\BarberShop.CoreLayer\bin\Debug\net8.0\BarberShop.CoreLayer.deps.json
+D:\BarberShopProject\BarberShopBackendProject\BarberShop.CoreLayer\bin\Debug\net8.0\BarberShop.CoreLayer.dll
+D:\BarberShopProject\BarberShopBackendProject\BarberShop.CoreLayer\bin\Debug\net8.0\BarberShop.CoreLayer.pdb
+D:\BarberShopProject\BarberShopBackendProject\BarberShop.CoreLayer\bin\Debug\net8.0\BarberShop.DataLayer.dll
+D:\BarberShopProject\BarberShopBackendProject\BarberShop.CoreLayer\bin\Debug\net8.0\BarberShop.DataLayer.pdb
+D:\BarberShopProject\BarberShopBackendProject\BarberShop.CoreLayer\obj\Debug\net8.0\BarberShop.CoreLayer.csproj.AssemblyReference.cache
+D:\BarberShopProject\BarberShopBackendProject\BarberShop.CoreLayer\obj\Debug\net8.0\BarberShop.CoreLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\BarberShopProject\BarberShopBackendProject\BarberShop.CoreLayer\obj\Debug\net8.0\BarberShop.CoreLayer.AssemblyInfoInputs.cache
+D:\BarberShopProject\BarberShopBackendProject\BarberShop.CoreLayer\obj\Debug\net8.0\BarberShop.CoreLayer.AssemblyInfo.cs
+D:\BarberShopProject\BarberShopBackendProject\BarberShop.CoreLayer\obj\Debug\net8.0\BarberShop.CoreLayer.csproj.CoreCompileInputs.cache
+D:\BarberShopProject\BarberShopBackendProject\BarberShop.CoreLayer\obj\Debug\net8.0\BarberSh.A6E534BC.Up2Date
+D:\BarberShopProject\BarberShopBackendProject\BarberShop.CoreLayer\obj\Debug\net8.0\BarberShop.CoreLayer.dll
+D:\BarberShopProject\BarberShopBackendProject\BarberShop.CoreLayer\obj\Debug\net8.0\refint\BarberShop.CoreLayer.dll
+D:\BarberShopProject\BarberShopBackendProject\BarberShop.CoreLayer\obj\Debug\net8.0\BarberShop.CoreLayer.pdb
+D:\BarberShopProject\BarberShopBackendProject\BarberShop.CoreLayer\obj\Debug\net8.0\ref\BarberShop.CoreLayer.dll
