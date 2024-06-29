@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BarberShop.DataLayer.Migrations
 {
     [DbContext(typeof(BarberShopContext))]
-    [Migration("20240624223825_fix")]
-    partial class fix
+    [Migration("20240625142939_Inital Catalog")]
+    partial class InitalCatalog
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -71,7 +71,7 @@ namespace BarberShop.DataLayer.Migrations
                     b.Property<DateTime>("CreationDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("CustomerId")
+                    b.Property<int?>("CustomerId")
                         .HasColumnType("int");
 
                     b.Property<bool>("IsDelete")
@@ -84,14 +84,14 @@ namespace BarberShop.DataLayer.Migrations
                     b.Property<DateTime>("OrderDoneDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("UserId")
+                    b.Property<int?>("UserApplicationId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.HasIndex("CustomerId");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("UserApplicationId");
 
                     b.ToTable("Orders");
                 });
@@ -132,21 +132,13 @@ namespace BarberShop.DataLayer.Migrations
 
             modelBuilder.Entity("BarberShop.DataLayer.Entities.Order", b =>
                 {
-                    b.HasOne("BarberShop.DataLayer.Entities.Customer", "Customer")
+                    b.HasOne("BarberShop.DataLayer.Entities.Customer", null)
                         .WithMany("Orders")
-                        .HasForeignKey("CustomerId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .HasForeignKey("CustomerId");
 
-                    b.HasOne("BarberShop.DataLayer.Entities.UserApplication", "OrderUser")
+                    b.HasOne("BarberShop.DataLayer.Entities.UserApplication", null)
                         .WithMany("Orders")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("Customer");
-
-                    b.Navigation("OrderUser");
+                        .HasForeignKey("UserApplicationId");
                 });
 
             modelBuilder.Entity("BarberShop.DataLayer.Entities.Customer", b =>

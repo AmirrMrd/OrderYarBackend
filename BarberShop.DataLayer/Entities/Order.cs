@@ -9,11 +9,7 @@ namespace BarberShop.DataLayer.Entities
 {
 	public class Order : BaseEntity
 	{
-        public string OrderCode { get; set; }
-        [ForeignKey("CustomerId")]
-        public Customer Customer { get; set; }
-        [ForeignKey("UserId")]
-        public UserApplication OrderUser { get; set; }
-        public DateTime OrderDoneDate { get; set; }
-    }
+		public string OrderCode { get; set; }
+		public DateTime OrderDoneDate { get; set; }
+	}
 }

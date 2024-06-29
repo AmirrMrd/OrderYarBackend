@@ -17,12 +17,15 @@ namespace BarberShop.DataLayer.Context
         public DbSet<UserApplication> Users { get; set; }
 		public DbSet<Customer> Customers { get; set; }
 		public DbSet<Order> Orders { get; set; }
+
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
-			foreach (var relationship in modelBuilder.Model.GetEntityTypes().SelectMany(s => s.GetForeignKeys()))
-			{
-				relationship.DeleteBehavior = DeleteBehavior.Restrict;
-			}
+			//One To One
+
+			// One To Many
+			modelBuilder.Entity<Customer>().HasMany(a => a.Orders).WithOne();
+			modelBuilder.Entity<UserApplication>().HasMany(a => a.Orders).WithOne();
+
 			base.OnModelCreating(modelBuilder);
 		}
 	}
