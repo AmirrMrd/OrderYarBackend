@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "HaIsQHT4i4Gz8EwRPqMDd3dnOsa0QIyDaH+F5MMNDjc=",
+  "Source": "OrderYar.Backend.Api",
+  "BasePath": "_content/OrderYar.Backend.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
